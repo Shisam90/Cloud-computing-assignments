@@ -9,8 +9,8 @@ function sendThankYouEmail() {
   const name = lastResponse[1]; 
   const email = lastResponse[2]; 
 
-  const subject = "फारम पेश गर्नुभएकोमा धन्यवाद!!!";
-  const body = "Dear ${name},\n\फारम भर्दिनु भएकोमा धन्यबाद ☻☻☻.\n\nBest regards,\nAngel Maharjan";
+  const subject = "Thank you!!";
+  const body = "Dear ${name},\n\Thank you for submitting form.\n\nBest regards,\nShisam Gyawali";
 
   MailApp.sendEmail(email, subject, body);
   Logger.log(email, subject, body)
